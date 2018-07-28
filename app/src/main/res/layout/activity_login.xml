@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            layout="@layout/app_bar_layout"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="4dp"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <br.com.bloder.magic.view.MagicButton
+                    android:id="@+id/magicBtnFb"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:magic_button_size="50dp"
+                    app:button_icon="@drawable/facebook"
+                    app:button_icon_height="30dp"
+                    app:button_icon_width="30dp"
+                    app:hide_text="   Facebook"
+                    app:hide_text_size="8sp"
+                    app:hide_text_color="@android:color/white"
+                    app:expandable_area_color="#7986CB"
+                    android:layout_marginRight="4dp"/>
+
+                <br.com.bloder.magic.view.MagicButton
+                    android:id="@+id/magicBtnGoogle"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:magic_button_size="50dp"
+                    app:button_icon="@drawable/search"
+                    app:button_icon_height="30dp"
+                    app:button_icon_width="30dp"
+                    app:hide_text="Google"
+                    app:hide_text_size="8sp"
+                    app:hide_text_color="@android:color/white"
+                    app:icon_button_color="#ffffff"
+                    app:expandable_area_color="#7986CB"
+                    android:layout_marginLeft="4dp"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="4dp"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OR"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"/>
+
+                <EditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"/>
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btnLogIn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Log In"
+                    android:background="#27AB00"
+                    android:textColor="@android:color/white"/>
+
+                <TextView
+                    android:id="@+id/txtForgotPwd"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password?"
+                    android:textSize="18sp"
+                    android:textColor="#0615E0"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18sp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not a member? "
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/txtRegister"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#0615E0"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
